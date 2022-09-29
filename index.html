@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
+} 
+.btn{
+    width: 104px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 23px;
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+    color: white;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Change the Theme </h2>
+<p>Click the button to get dark and light mode for this page.</p>
+
+<button class="btn" onclick="myFunction()">Click Me</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-theme");
+}
+</script>
+
+</body>
+</html>
+
